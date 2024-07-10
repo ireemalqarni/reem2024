@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.static(path.join(__dirname,'build')));
-// new comment
+// new comment !!!
 app.get('/*', function(req,res){
   res.sendFile(path.join(__dirname, 'build' ,'index.html'))
 })
